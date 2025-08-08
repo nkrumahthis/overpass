@@ -1,19 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Hammer } from "lucide-react";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[24px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl sm:text-5xl font-bold flex items-center gap-4">
+        <div className="w-full flex items-center justify-center">
+          <h1 className="text-4xl sm:text-5xl font-bold flex items-center gap-4 text-center">
           <GraduationCap className="w-20 h-20" />
           Overpass
         </h1>
-        <p className="text-lg text-muted-foreground">
-          A student data management system for SHS in Ghana.
-        </p>
-        <Button>Start now</Button>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-lg text-muted-foreground text-center">
+            A student data management system for SHS in Ghana.
+          </p>
+        </div>
+        <div className="flex items-center justify-center w-full">
+          <Button size="lg">Start now</Button>
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
