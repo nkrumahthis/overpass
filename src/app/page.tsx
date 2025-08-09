@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Hammer } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,9 +8,9 @@ export default function Home() {
       <main className="flex flex-col gap-[24px] row-start-2 items-center sm:items-start">
         <div className="w-full flex items-center justify-center">
           <h1 className="text-4xl sm:text-5xl font-bold flex items-center gap-4 text-center">
-          <GraduationCap className="w-20 h-20" />
-          Overpass
-        </h1>
+            <GraduationCap className="w-20 h-20" />
+            Overpass
+          </h1>
         </div>
         <div className="flex flex-col items-center gap-2">
           <p className="text-lg text-muted-foreground text-center">
@@ -17,7 +18,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex items-center justify-center w-full">
-          <Button size="lg">Start now</Button>
+          <Link href="/dashboard" className="w-full">
+            <Button size="lg">Start now</Button>
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
